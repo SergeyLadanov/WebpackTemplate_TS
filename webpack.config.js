@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/ts/index.ts',
   devtool: "source-map",
   output: {
-    filename: 'index.js',
+    filename: './index.js',
     path: path.resolve(__dirname, 'dist'),
   },
   devServer:{
