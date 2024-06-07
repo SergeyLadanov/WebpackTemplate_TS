@@ -1,0 +1,36 @@
+// {
+//   "configurations": [
+//     {
+//       "name": "Debug ts",
+//       "program": "${workspaceFolder}/src/index.ts",
+//       "request": "launch",
+//       "skipFiles": [
+//         "<node_internals>/**"
+//       ],
+//       "type": "node",
+//       "preLaunchTask": "Сборка"
+//     }
+//   ]
+// }
+
+
+{
+  "configurations": [
+    {
+      "command": "npm start",
+      "name": "Web server debug",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+
+    {
+      "name": "Standalone debug",
+      "program": "${workspaceFolder}/src/main.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    }
+  ]
+}
