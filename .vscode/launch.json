@@ -25,7 +25,7 @@
 
     {
       "name": "Standalone debug",
-      "program": "${workspaceFolder}/src/main.js",
+      "program": "${workspaceFolder}/src/index.ts",
       "request": "launch",
       "skipFiles": [
         "<node_internals>/**"
