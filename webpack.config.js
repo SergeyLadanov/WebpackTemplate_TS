@@ -37,7 +37,7 @@ module.exports = {
           }
         },
         {
-          test: /\.(s)css$/,
+          test: /\.s?css$/,
           exclude: /\.module\.css$/,
           use: ['style-loader', 'css-loader','sass-loader']
         },
@@ -54,6 +54,9 @@ module.exports = {
             }
           ]
         }
-    ]
+    ],
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.tsx'],
   }
 }
