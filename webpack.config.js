@@ -28,10 +28,12 @@ module.exports = {
       theme_color: '#000000',
       start_url: '.',
       display: 'standalone',
+      fingerprints: false,
+      publicPath: '.',
       icons: [
         {
           src: path.resolve('public/favicon.ico'), // путь к исходной иконке
-          sizes: [96, 128, 192, 256, 384, 512] // различные размеры иконок
+          sizes: [128, 256, 512] // различные размеры иконок
         }
       ]
     }),
