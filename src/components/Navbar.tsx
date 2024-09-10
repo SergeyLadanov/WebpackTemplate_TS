@@ -4,6 +4,7 @@ import '../scss/styles.scss';
 import '../css/offcanvas.css';
 import '../css/index.css';
 import { Dropdown } from 'bootstrap';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
 function ToogleOffcanvasClickHandler() 
@@ -26,7 +27,7 @@ function Navbar()
     return (
         <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
             <div className="container-fluid">
-                <a className="navbar-brand" href="index.html">Title</a>
+                <a className="navbar-brand" href="/">Title</a>
                 <button className="navbar-toggler p-0 border-0" type="button" onClick={ToogleOffcanvasClickHandler} aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -34,13 +35,14 @@ function Navbar()
                 <div className="navbar-collapse offcanvas-collapse" id="navbars">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#" id = "item1_id">Item1</a>
+                        {/* <a className="nav-link active" aria-current="page" href="/" id = "item1_id">Item1</a> */}
+                        <Link to="/" className="nav-link active"  aria-current="page">Main</Link>
                     </li>
 
                     <li className="nav-item">
-                    <a className="nav-link" href="#" id = "item2_id">Item2</a>
+                        {/* <a className="nav-link" href="/about" id = "item2_id">Item2</a> */}
+                        <Link to="/about" className="nav-link"  aria-current="page">About</Link>
                     </li>
 
                     <li className="nav-item dropdown">
@@ -53,7 +55,8 @@ function Navbar()
                     </li>
 
                     <li className="nav-item">
-                    <a className="nav-link" href="#" id = "item4_id">Item4</a>
+                        {/* <a className="nav-link" href="#" id = "item4_id">Item4</a> */}
+                        <Link to="/contacts" className="nav-link"  aria-current="page">Contacts</Link>
                     </li>
                 </ul>
 
