@@ -13,6 +13,16 @@ function ToogleOffcanvasClickHandler()
 }
 
 
+function ItemClickHandler(event:any) 
+{
+  document.querySelector('.active').classList.remove('active');
+  event.target.classList.add('active');
+  document.querySelector('.offcanvas-collapse').classList.remove('open');
+}
+
+
+
+
 function Navbar()
 {
     useEffect(() => {
@@ -37,12 +47,12 @@ function Navbar()
 
                     <li className="nav-item">
                         {/* <a className="nav-link active" aria-current="page" href="/" id = "item1_id">Item1</a> */}
-                        <Link to="/" className="nav-link active"  aria-current="page">Main</Link>
+                        <Link to="/" className="nav-link active" onClick={ItemClickHandler}  aria-current="page">Main</Link>
                     </li>
 
                     <li className="nav-item">
                         {/* <a className="nav-link" href="/about" id = "item2_id">Item2</a> */}
-                        <Link to="/about" className="nav-link"  aria-current="page">About</Link>
+                        <Link to="/about" className="nav-link" onClick={ItemClickHandler} aria-current="page">About</Link>
                     </li>
 
                     <li className="nav-item dropdown">
@@ -56,7 +66,7 @@ function Navbar()
 
                     <li className="nav-item">
                         {/* <a className="nav-link" href="#" id = "item4_id">Item4</a> */}
-                        <Link to="/contacts" className="nav-link"  aria-current="page">Contacts</Link>
+                        <Link to="/contacts" className="nav-link" onClick={ItemClickHandler}  aria-current="page">Contacts</Link>
                     </li>
                 </ul>
 
