@@ -2,8 +2,26 @@ import React, { useEffect } from 'react';
 import '../scss/styles.scss';
 
 
+
+
 function Main()
 {
+    let refreshIntervalId:NodeJS.Timeout;
+
+    useEffect(() => {
+        
+        refreshIntervalId = setInterval(()=>{
+            console.log("Main...")
+        }, 1000);
+
+        return () => {
+            // код выполняется при размонтировании компонента (закрытии)
+            console.log('Component unmounted');
+            clearInterval(refreshIntervalId);
+          };
+    });
+
+
     return (
         <div className="row">
             {/* <div className="row" style={{textAlign: "center"}} id = "loading">
