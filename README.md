@@ -1,6 +1,7 @@
 # Bootstrap w/ Webpack
 
-Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual JavaScript plugins with [Webpack](https://webpack.js.org).
+Include [Bootstrap](https://getbootstrap.com)'s source Sass and individual
+JavaScript plugins with [Webpack](https://webpack.js.org).
 
 ## Edit in browser
 

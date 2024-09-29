@@ -1,27 +1,26 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "type": "shell",
-        "label": "Сборка",
-        "command": "npm",
-        "args": ["run", "build"],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": [],
-        "detail": "Сборка проекта"
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Сборка",
+      "command": "npm",
+      "args": ["run", "build"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
       },
+      "problemMatcher": [],
+      "detail": "Сборка проекта"
+    },
 
-  
-      {
-        "type": "shell",
-        "label": "Установить зависимости",
-        "command": "npm",
-        "args": ["install"],
-        "problemMatcher": [],
-        "detail": "Установка зависимостей"
-      }
-    ]
-  }
+    {
+      "type": "shell",
+      "label": "Установить зависимости",
+      "command": "npm",
+      "args": ["install"],
+      "problemMatcher": [],
+      "detail": "Установка зависимостей"
+    }
+  ]
+}
